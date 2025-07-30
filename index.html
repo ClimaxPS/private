@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClimaxPS Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rubik&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(to bottom right, #0f0f0f, #1e1e2e);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3em;
+      color: #00ffcc;
+      margin-bottom: 5px;
+    }
+    .status {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .status img {
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+    }
+    .menu {
+      margin-top: 30px;
+    }
+    .menu button {
+      background-color: #00ffcc;
+      border: none;
+      color: black;
+      padding: 15px;
+      margin: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .section {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #1f1f2f;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    code, pre {
+      background-color: #111;
+      padding: 10px;
+      border-radius: 10px;
+      display: block;
+      white-space: pre-wrap;
+    }
+    a {
+      color: #00ffff;
+    }
+    .logo {
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+  <h1><img src="https://i.imgur.com/R5zF4uY.png" alt="logo" class="logo"> ClimaxPS</h1>
+  <div class="status">Server Status: <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="online" /> Online</div>  <div class="menu">
+    <button onclick="toggleSection('how')">How To Play</button>
+    <button onclick="toggleSection('price')">Price Role & Assets ClimaxPS</button>
+    <button onclick="window.location.href='https://discord.gg/tx54fYyRE6'">Discord ClimaxPS</button>
+  </div>  <div id="how" class="section">
+    <h2>How To Play</h2>
+    <p>Choose your device:</p>
+    <button onclick="toggleSection('android')">ANDROID</button>
+    <button onclick="toggleSection('ios')">IOS</button>
+    <button onclick="toggleSection('windows')">WINDOWS</button><div id="android" class="section">
+  <h3>ANDROID</h3>
+  <ol>
+    <li>First, download Powertunnel APP from <a href="https://play.google.com/store/apps/details?id=app.powertunnel.android">here</a></li>
+    <li>Click on the "Powertunnel" button.</li>
+    <li>It will copy the Powertunnel host link.</li>
+    <li>Open the Powertunnel app, click the three-line icon, and click on the host settings icon.</li>
+    <li>Paste the copied Powertunnel host URL. Also, change the host update period to "on start".</li>
+    <li>Now you can log in to your GTPS!</li>
+  </ol>
+  <p>Virtual Host: <a href="https://www.mediafire.com/file/1cg66594m00kp1n/ClimaxPS.txt/file?dkey=24ak7maus50&r=1758">Download</a></p>
+  <p>Power Tunnel Host: <code>https://gtpshost.com/ClimaxPS.txt</code></p>
+</div>
+
+<div id="ios" class="section">
+  <h3>IOS</h3>
+  <ol>
+    <li>Download App called: "Surge 5" from App Store.</li>
+    <li>Press "OK"</li>
+    <li>Click on "Default.conf"</li>
+    <li>Click on "IMPORT" → Download Profile from URL</li>
+    <li>Put copied URL from button, click OK → Done</li>
+    <li>Press "SETUP" and allow VPN configuration</li>
+    <li>Open Growtopia and connect!</li>
+  </ol>
+  <p>Surge 5 Host: <code>https://ios.gtpshost.com/ClimaxPS</code></p>
+</div>
+
+<div id="windows" class="section">
+  <h3>WINDOWS</h3>
+  <ol>
+    <li>Press ⊞ Win+R and go to <code>C:\Windows\System32\drivers\etc</code></li>
+    <li>Edit file named <code>hosts</code> with Notepad</li>
+    <li>Paste the following lines:</li>
+  </ol>
+  <pre>
+
+91.134.85.13 growtopia1.com 91.134.85.13 growtopia2.com 91.134.85.13 www.growtopia1.com 91.134.85.13 www.growtopia2.com 91.134.85.13 RvLnd.here </pre> </div>
+
+  </div>  <div id="price" class="section">
+    <h2>ROLE PRICE</h2>
+    <pre>
+GOD MAX : Rp 500.000 ($33)
+GOD     : Rp 400.000 ($27)
+U MOD   : Rp 300.000 ($20)
+S MOD   : Rp 200.000 ($13)
+MOD     : Rp 100.000 ($7)
+S VIP   : Rp 50.000  ($3.3)
+VIP     : Rp 20.000  ($1.3)
+Cheat Role Perma : Rp 25.000 ($1.7)
+    </pre>
+    <p>If U Buy DM Discord Owner: <strong><a href="https://discord.com/users/698003919946776606">@698003919946776606</a></strong></p>
+    <h2>ASSETS PRICE</h2>
+    <pre>
+DR TITLE          : Rp 20.000 ($1.3)
+GROW4GOD TITLE    : Rp 30.000 ($2)
+MENTOR TITLE      : Rp 30.000 ($2)
+L TITLE           : Rp 25.000 ($1.7)
+ALL L ITEM        : Rp 20.000 ($1.3)
+    </pre>
+  </div>  <script>
+    function toggleSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => {
+        if (sec.id === id || sec.contains(document.getElementById(id))) {
+          sec.style.display = (sec.style.display === 'block') ? 'none' : 'block';
+        } else {
+          sec.style.display = 'none';
+        }
+      });
+    }
+  </script></body>
+</html>
